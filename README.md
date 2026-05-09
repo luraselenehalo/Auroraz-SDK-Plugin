@@ -1,6 +1,6 @@
 # auroraz-sdk
 
-Official Plugin SDK for [AURORAZ](https://github.com/luraselenehalo/AURORAZ) - the Personal AI OS.
+Official Plugin SDK for AURORAZ - the Personal AI OS.
 
 ## Install
 
