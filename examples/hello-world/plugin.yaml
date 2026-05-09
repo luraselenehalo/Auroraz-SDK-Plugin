@@ -1,0 +1,13 @@
+id: hello-world
+name: "Hello World"
+version: "0.1.0"
+description: "Minimal subprocess plugin that registers one tool. The simplest possible auroraz-sdk plugin."
+author: "Anonymous"
+category: "tools"
+icon: "👋"
+tags: [example, beginner]
+
+# Hello World needs no permissions — its tool has no side effects.
+permissions: []
+
+sdk_entry: main.py

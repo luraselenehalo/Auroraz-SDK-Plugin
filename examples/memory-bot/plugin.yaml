@@ -1,0 +1,14 @@
+id: memory-bot
+name: "Memory Bot"
+version: "0.1.0"
+description: "Two tools: remember a fact for later, then recall it via semantic search."
+author: "Anonymous"
+category: "tools"
+icon: "🧠"
+tags: [example, memory]
+
+permissions:
+  - memory:read
+  - memory:write
+
+sdk_entry: main.py

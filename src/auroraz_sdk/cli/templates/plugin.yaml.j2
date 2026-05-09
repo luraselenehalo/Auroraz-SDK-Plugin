@@ -1,0 +1,19 @@
+id: {{ plugin_id }}
+name: {{ plugin_name }}
+version: 0.1.0
+author: ""
+description: ""
+{% if plugin_type == "integration" -%}
+permissions:
+  - network:api.example.com
+{% else -%}
+permissions: []
+{% endif -%}
+sdk_entry: backend/main.py
+tools:
+  - example_tool
+hooks:
+  - on_startup
+{% if with_ui -%}
+ui_panel: frontend/Panel.jsx
+{% endif -%}

@@ -1,0 +1,13 @@
+import React from "react";
+
+export default function Panel() {
+  {%- raw %}
+  const style = { padding: 16, fontFamily: "system-ui, sans-serif" };
+  {%- endraw %}
+  return (
+    <div style={style}>
+      <h2>{{ plugin_name }}</h2>
+      <p>UI panel for {{ plugin_id }}.</p>
+    </div>
+  );
+}

@@ -1,0 +1,37 @@
+"""{{ plugin_name }} — AURORAZ SDK plugin entry point."""
+
+from __future__ import annotations
+
+import logging
+
+from sdk import Plugin, aurora, hook, tool
+{% if plugin_type == "integration" %}
+from auth import get_client
+{% endif %}
+
+logger = logging.getLogger("auroraz.plugin.{{ plugin_id_py }}")
+
+plugin = Plugin(
+    id="{{ plugin_id }}",
+    name="{{ plugin_name }}",
+    version="0.1.0",
+    permissions={{ permissions_literal }},
+)
+
+
+@tool(
+    name="example_tool",
+    description="\u0e15\u0e31\u0e27\u0e2d\u0e22\u0e48\u0e32\u0e07 tool",
+    when="user asks to do something",
+)
+async def example_tool(query: str) -> str:
+    return f"Done: {query}"
+
+
+@hook("on_startup")
+async def on_startup(ctx):
+    logger.info("{{ plugin_id }} started")
+
+
+if __name__ == "__main__":
+    plugin.run()

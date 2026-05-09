@@ -1,0 +1,11 @@
+"""FastAPI router for __NAME__. Mounted at /api/plugins/__PLUGIN_ID__."""
+
+from fastapi import APIRouter
+
+router = APIRouter()
+
+
+@router.get("/ping")
+async def ping():
+    """Sanity-check endpoint. Visit /api/plugins/__PLUGIN_ID__/ping."""
+    return {"plugin_id": "__PLUGIN_ID__", "status": "ok"}

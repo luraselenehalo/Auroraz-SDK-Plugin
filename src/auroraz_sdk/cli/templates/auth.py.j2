@@ -1,0 +1,14 @@
+"""External API authentication helpers for {{ plugin_name }}."""
+
+from __future__ import annotations
+
+import os
+
+import httpx
+
+
+def get_client() -> httpx.AsyncClient:
+    """Build an httpx client with auth headers from env / plugin config."""
+    api_key = os.environ.get("{{ env_prefix }}_API_KEY", "")
+    headers = {"Authorization": f"Bearer {api_key}"} if api_key else {}
+    return httpx.AsyncClient(headers=headers, timeout=30.0)

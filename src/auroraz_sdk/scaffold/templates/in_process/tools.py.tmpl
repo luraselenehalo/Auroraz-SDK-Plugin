@@ -1,0 +1,17 @@
+"""Agent tools for __NAME__.
+
+Each function listed in plugin.yaml's `entry_points.tools.functions` becomes
+callable by Luna's tool dispatcher. Tool names are prefixed with the
+plugin id by convention (lint rule TOOL002) to avoid catalog collisions.
+"""
+
+from __future__ import annotations
+
+
+async def __PLUGIN_ID_SNAKE___hello(name: str = "world") -> str:
+    """Say hello — replace with a real tool.
+
+    Tool dispatch passes string params through; serialize structured
+    return values as JSON before returning.
+    """
+    return f"Hello, {name}! From __PLUGIN_ID__."

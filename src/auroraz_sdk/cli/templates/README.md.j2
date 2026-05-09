@@ -1,0 +1,20 @@
+# {{ plugin_name }}
+
+> AURORAZ plugin scaffolded with `auroraz-sdk init`.
+
+## Develop
+
+```bash
+auroraz-sdk validate    # lint manifest + static analyze backend/
+auroraz-sdk dev         # run plugin against a local AURORAZ core
+auroraz-sdk pack        # build {{ plugin_id }}-0.1.0.azpkg
+```
+
+## Layout
+
+- `plugin.yaml` — manifest (id, version, permissions, tools, hooks)
+- `backend/main.py` — Python entry point
+- `requirements.txt` / `requirements.lock` — pinned deps + hashes
+{% if with_ui -%}
+- `frontend/Panel.jsx` — optional UI panel
+{% endif -%}

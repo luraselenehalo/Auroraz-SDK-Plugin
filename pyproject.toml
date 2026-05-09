@@ -1,0 +1,51 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "auroraz-sdk"
+version = "0.2.0"
+description = "Official Plugin SDK for AURORAZ - Personal AI OS"
+readme = "README.md"
+license = { text = "MIT" }
+requires-python = ">=3.10"
+authors = [
+    { name = "ResinCore" },
+]
+keywords = ["auroraz", "ai", "plugin", "sdk", "personal-ai-os"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+]
+dependencies = [
+    "pyyaml>=6.0",
+    "cryptography>=42.0",
+]
+
+[project.urls]
+Homepage = "https://github.com/luraselenehalo/Auroraz-SDK-Plugin"
+Documentation = "https://github.com/luraselenehalo/Auroraz-SDK-Plugin/tree/main/docs"
+Repository = "https://github.com/luraselenehalo/Auroraz-SDK-Plugin"
+Issues = "https://github.com/luraselenehalo/Auroraz-SDK-Plugin/issues"
+
+[project.scripts]
+auroraz-sdk = "auroraz_sdk.cli.main:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/auroraz_sdk"]
+
+[tool.hatch.build.targets.sdist]
+include = [
+    "src/auroraz_sdk",
+    "examples",
+    "docs",
+    "README.md",
+    "LICENSE",
+]

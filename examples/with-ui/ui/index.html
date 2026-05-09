@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+  <title>With UI</title>
+  <link rel="stylesheet" href="app.css" />
+</head>
+<body>
+  <main>
+    <h2>With UI Plugin</h2>
+    <p id="status">Initializing…</p>
+    <p class="muted">
+      This iframe is loaded by AURORAZ via the postMessage protocol. The
+      <code>auroraz/init</code> message lands once on load with the
+      plugin's settings + permissions payload. Reply with
+      <code>plugin/notify</code> to surface a toast in AURORAZ.
+    </p>
+    <h3>Init payload</h3>
+    <pre id="output">(waiting for auroraz/init)</pre>
+    <button id="ping">Send notify ping</button>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
