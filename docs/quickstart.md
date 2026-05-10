@@ -6,7 +6,7 @@ Luna can call.
 
 ## Prerequisites
 
-- Python 3.10+
+- Python 3.11+
 - AURORAZ desktop running locally (or you can build offline and install
   the plugin once AURORAZ is available)
 
