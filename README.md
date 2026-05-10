@@ -2,7 +2,7 @@
 
 # auroraz-sdk
 
-**Official Plugin SDK for [AURORAZ](https://github.com/luraselenehalo/AURORAZ) — the Personal AI OS**
+**Official Plugin SDK for AURORAZ — the Personal AI OS**
 
 *Build plugins that extend a local-first AI companion with custom tools, memory, reasoning, and UI.*
 
