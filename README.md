@@ -62,7 +62,7 @@ pip install auroraz-sdk
 pip install auroraz-sdk==0.2.0
 ```
 
-You'll also need the **AURORAZ desktop app** to run plugins — the SDK handles authoring; the desktop app is the runtime that loads, sandboxes, and routes IPC. Get it from [github.com/luraselenehalo/AURORAZ](https://github.com/luraselenehalo/AURORAZ).
+You'll also need the **AURORAZ desktop app** to run plugins — the SDK handles authoring; the desktop app is the runtime that loads, sandboxes, and routes IPC. Get it from Auroraz.
 
 ---
 
