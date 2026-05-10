@@ -1,21 +1,332 @@
-MIT License
+                  ResinCore Source-Available License (RSAL)
+                              Version 1.0
+                       Effective Date: April 25, 2026
 
-Copyright (c) 2026 ResinCore
+                Copyright (c) 2026 ResinCore Team
+                          All Rights Reserved.
 
-Permission is hereby granted, free of charge, to any person obtaining a copy
-of this software and associated documentation files (the "Software"), to deal
-in the Software without restriction, including without limitation the rights
-to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-copies of the Software, and to permit persons to whom the Software is
-furnished to do so, subject to the following conditions:
+================================================================================
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+PREAMBLE
 
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
-SOFTWARE.
+This source code is published for transparency, study, and academic reference
+only. It is NOT open source. It is NOT free software. The Software is the
+proprietary work of ResinCore Team ("ResinCore") and forms the core of
+the AURORAZ Digital Lifeform AI ecosystem.
+
+ResinCore makes this source code visible because we believe an AI system that
+holds your memories, your character data, and runs in your home should be
+auditable. You should be able to read every line that touches your data.
+
+But "readable" is not "usable". The rights granted below are intentionally
+narrow.
+
+If you want to use, modify, deploy, or build a product on top of this
+Software, you must obtain a separate license. Contact: golf@resincore.ai
+
+================================================================================
+
+1. DEFINITIONS
+
+  1.1  "Software" means the source code, configuration files, model weights,
+       schemas, prompts, documentation, and any other files contained in the
+       repository or distribution that includes this LICENSE file, EXCLUDING
+       any subdirectory that contains its own LICENSE file (such directories
+       are governed by their own license terms).
+
+  1.2  "ResinCore" means ResinCore Team a company organized under the
+       laws of the Kingdom of Thailand, and the sole copyright holder of the
+       Software.
+
+  1.3  "You" means an individual or legal entity accessing or interacting
+       with the Software in any manner.
+
+  1.4  "View" means the act of reading, displaying, browsing, searching,
+       indexing, downloading for offline reading, or otherwise inspecting
+       the human-readable form of the Software.
+
+  1.5  "Use" means executing, running, compiling for execution, deploying,
+       hosting, instantiating, training with, fine-tuning with, embedding
+       into another system, or otherwise causing the Software to perform
+       its intended function in any environment.
+
+  1.6  "Derivative Work" means any work that is based on, derived from,
+       translated from, adapted from, or incorporates any portion of the
+       Software, in whole or in part.
+
+================================================================================
+
+2. RIGHTS GRANTED
+
+  Subject to strict compliance with all terms of this License, ResinCore
+  grants You a worldwide, royalty-free, non-exclusive, non-transferable,
+  revocable license to:
+
+  (a)  VIEW the Software for the purpose of personal study, learning,
+       security audit, or academic reference;
+
+  (b)  QUOTE limited excerpts of the Software (not exceeding fifty (50)
+       lines per file, and not exceeding ten percent (10%) of any single
+       file) in academic papers, blog posts, technical articles, conference
+       talks, or educational materials, provided that proper attribution
+       is given as required in Section 4;
+
+  (c)  FORK the repository on GitHub or equivalent platforms solely for
+       the purpose of personal reading, bookmarking, or contributing
+       feedback through issues and pull requests to ResinCore;
+
+  (d)  CITE the Software in research, including measuring, benchmarking,
+       describing, or analyzing its publicly observable behavior.
+
+  No other rights are granted. All rights not expressly granted are
+  reserved by ResinCore.
+
+================================================================================
+
+3. RESTRICTIONS
+
+  Without prior written permission from ResinCore (obtainable via
+  golf@resincore.ai), You MAY NOT:
+
+  (a)  USE the Software, in whole or in part, for any purpose, including
+       personal, educational, research, evaluation, internal, or commercial
+       purposes;
+
+  (b)  RUN, EXECUTE, COMPILE-FOR-EXECUTION, or DEPLOY the Software in any
+       environment, including local machines, servers, containers, virtual
+       machines, cloud infrastructure, or edge devices;
+
+  (c)  CREATE DERIVATIVE WORKS of the Software, except for trivial patches
+       submitted back to ResinCore through official contribution channels;
+
+  (d)  REDISTRIBUTE the Software, in original or modified form, in source
+       or binary form, in whole or in part, by any means, to any party;
+
+  (e)  HOST the Software, or any Derivative Work, as a service, software-
+       as-a-service, application programming interface, or any other form
+       of access provided to third parties;
+
+  (f)  TRAIN, FINE-TUNE, DISTILL, or otherwise use the Software, its
+       outputs, its model weights, or its memory data to create or improve
+       any artificial intelligence model, system, or product;
+
+  (g)  REVERSE-ENGINEER, DECOMPILE, or DISASSEMBLE the Software for the
+       purpose of producing a competing or substantially similar product;
+
+  (h)  REMOVE, ALTER, or OBSCURE any copyright notice, trademark, license
+       header, or attribution contained in the Software;
+
+  (i)  USE the names "ResinCore", "AURORAZ", "GameTraverse", "ResinAI",
+       or any associated logo, trademark, or trade dress, to endorse,
+       promote, or imply association with any product, service, or work
+       not produced by ResinCore;
+
+  (j)  SUBLICENSE, ASSIGN, or TRANSFER any rights granted under this
+       License to any third party.
+
+================================================================================
+
+4. ATTRIBUTION
+
+  Any quotation, citation, or reference to the Software permitted under
+  Section 2 must include, in a reasonably visible location:
+
+      "AURORAZ by ResinCore (https://resincore.ai),
+       source available under the ResinCore Source-Available License v1.0."
+
+  Academic citations must additionally follow the citation format published
+  at https://resincore.ai/cite (when available) or use a standard software
+  citation format identifying ResinCore as author and the repository URL
+  as source.
+
+================================================================================
+
+5. PLUGIN ECOSYSTEM EXCEPTION
+
+  ResinCore publishes a separate Plugin Software Development Kit (the
+  "Plugin SDK") under the Apache License, Version 2.0. The Plugin SDK
+  resides in a clearly designated subdirectory of the repository and is
+  governed by its own LICENSE file.
+
+  Nothing in this License restricts Your right to:
+
+  (a)  use the Plugin SDK under its Apache 2.0 terms;
+  (b)  develop, distribute, sell, or sublicense plugins built using the
+       Plugin SDK;
+  (c)  interface with AURORAZ at runtime through the documented Plugin
+       interfaces, when AURORAZ is being run by an end user under a valid
+       AURORAZ end-user license.
+
+  Plugins must not include, embed, statically link, or otherwise
+  incorporate any portion of the Software covered by this License.
+  Interaction must occur solely through the documented Plugin SDK
+  interfaces.
+
+================================================================================
+
+6. CONTRIBUTIONS
+
+  If You submit any contribution to ResinCore (including but not limited
+  to bug reports, patches, pull requests, suggestions, or feedback)
+  through any official channel, You hereby grant ResinCore a perpetual,
+  irrevocable, worldwide, royalty-free, non-exclusive, sublicensable
+  license to use, modify, distribute, and relicense such contribution
+  under any terms ResinCore chooses, including incorporating it into
+  proprietary or commercially licensed versions of the Software.
+
+  This grant is necessary to allow ResinCore to maintain a single,
+  legally clean codebase. By submitting a contribution, You represent
+  that You have the right to grant this license.
+
+================================================================================
+
+7. COMMERCIAL AND CUSTOM LICENSING
+
+  If You wish to use the Software for any purpose not permitted by this
+  License -- including but not limited to running it, modifying it,
+  embedding it in a product, deploying it, or building a service on top
+  of it -- You must obtain a separate written license from ResinCore.
+
+  Inquiries: golf@resincore.ai
+
+  ResinCore may, at its sole discretion, grant custom licenses for:
+
+  - Academic research collaborations
+  - Hardware partner integrations
+  - Enterprise deployments
+  - White-label or OEM arrangements
+  - Government and public-sector use
+
+  Terms, fees, and revenue-sharing arrangements are negotiated on a
+  case-by-case basis.
+
+================================================================================
+
+8. INTELLECTUAL PROPERTY
+
+  The Software is and shall remain the sole and exclusive property of
+  ResinCore. This License does not grant You any ownership interest in
+  the Software, any patent rights, any trademark rights, or any other
+  intellectual property rights, except for the limited rights expressly
+  set forth in Section 2.
+
+  ResinCore reserves all rights not expressly granted, including but not
+  limited to all patent rights, trade secret rights, and rights of
+  publicity associated with the Software and the AURORAZ ecosystem.
+
+================================================================================
+
+9. NO WARRANTY
+
+  THE SOFTWARE IS PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTY
+  OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+  WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE,
+  TITLE, AND NON-INFRINGEMENT. RESINCORE DOES NOT WARRANT THAT THE
+  SOFTWARE WILL BE ERROR-FREE, COMPLETE, ACCURATE, OR SUITABLE FOR ANY
+  PURPOSE.
+
+  ANY ARTIFICIAL INTELLIGENCE MODELS, MEMORY SYSTEMS, OR CHARACTER
+  PROFILES DESCRIBED IN THE SOFTWARE MAY PRODUCE INCORRECT, BIASED,
+  OFFENSIVE, OR HARMFUL OUTPUTS WHEN EXECUTED. THIS LICENSE GRANTS NO
+  RIGHT TO EXECUTE THE SOFTWARE, AND RESINCORE DISCLAIMS ALL LIABILITY
+  FOR ANY OUTPUTS PRODUCED BY UNAUTHORIZED EXECUTION.
+
+================================================================================
+
+10. LIMITATION OF LIABILITY
+
+  TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, IN NO EVENT SHALL
+  RESINCORE OR ITS OFFICERS, DIRECTORS, EMPLOYEES, OR AFFILIATES BE
+  LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, EXEMPLARY,
+  OR PUNITIVE DAMAGES, OR ANY LOSS OF PROFITS, REVENUE, DATA, OR USE,
+  ARISING OUT OF OR IN CONNECTION WITH THIS LICENSE OR THE SOFTWARE,
+  WHETHER IN CONTRACT, TORT, STRICT LIABILITY, OR OTHERWISE, EVEN IF
+  RESINCORE HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+  RESINCORE'S TOTAL CUMULATIVE LIABILITY ARISING UNDER OR RELATING TO
+  THIS LICENSE SHALL NOT EXCEED ONE HUNDRED UNITED STATES DOLLARS
+  (USD $100).
+
+================================================================================
+
+11. INDEMNIFICATION
+
+  You agree to defend, indemnify, and hold harmless ResinCore and its
+  officers, directors, employees, contractors, and affiliates from and
+  against any claims, damages, liabilities, costs, and expenses
+  (including reasonable attorneys' fees) arising out of or related to:
+
+  (a)  Your violation of this License;
+  (b)  Your unauthorized Use, modification, or distribution of the
+       Software;
+  (c)  Your violation of any applicable law or third-party right
+       (including intellectual property and privacy rights) in
+       connection with the Software.
+
+================================================================================
+
+12. TERMINATION
+
+  12.1  This License terminates automatically and immediately upon any
+        breach of its terms by You. No notice from ResinCore is required.
+
+  12.2  Upon termination, You must immediately:
+        (a) cease all Viewing and Use of the Software;
+        (b) delete all copies of the Software in Your possession or
+            control, including local clones, forks, backups, and
+            cached copies;
+        (c) cease any public reference to the Software that does not
+            comply with Section 4.
+
+  12.3  ResinCore may terminate this License at any time, for any reason,
+        by publishing a notice in the official repository or by direct
+        notification to You.
+
+  12.4  Sections 1, 4, 6, 8, 9, 10, 11, 12, and 13 survive termination.
+
+================================================================================
+
+13. GENERAL PROVISIONS
+
+  13.1  Governing Law. This License is governed by and construed in
+        accordance with the laws of the Kingdom of Thailand, without
+        regard to its conflict-of-laws principles.
+
+  13.2  Jurisdiction. Any dispute arising out of or relating to this
+        License is subject to the exclusive jurisdiction of the courts
+        of Bangkok, Thailand. ResinCore reserves the right to seek
+        injunctive relief in any jurisdiction where its intellectual
+        property is infringed.
+
+  13.3  Severability. If any provision of this License is held to be
+        unenforceable, that provision shall be modified to the minimum
+        extent necessary to make it enforceable, and the remaining
+        provisions shall continue in full force and effect.
+
+  13.4  No Waiver. ResinCore's failure to enforce any provision of this
+        License is not a waiver of that provision or any other provision.
+
+  13.5  Entire Agreement. This License constitutes the entire agreement
+        between You and ResinCore concerning the Software, and supersedes
+        all prior or contemporaneous understandings.
+
+  13.6  Updates. ResinCore may publish revised versions of this License.
+        Each version will carry a distinct version number. New versions
+        of the Software may be released under updated License terms; You
+        may continue Viewing prior releases under the License version
+        under which they were originally published.
+
+  13.7  Language. This License is executed in English. Translations may
+        be provided for convenience; in case of conflict, the English
+        text prevails.
+
+  13.8  Contact. All inquiries, including license requests, partnership
+        proposals, and academic collaboration:
+
+            ResinCore Team
+            Email: golf@resincore.ai
+            Web:   https://resincore.ai
+
+================================================================================
+
+                         END OF LICENSE
