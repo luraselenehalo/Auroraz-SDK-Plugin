@@ -47,7 +47,7 @@ See [docs/quickstart.md](docs/quickstart.md) for the 10-minute getting-started g
 - [Tutorial 2: Memory + tools](docs/tutorials/02-memory-and-tools.md) — 30 min
 - [Tutorial 3: Plugin with UI](docs/tutorials/03-plugin-with-ui.md) — 60 min
 - [Tutorial 4: Subprocess best practices](docs/tutorials/04-subprocess-best-practices.md) — 30 min
-- [Tutorial 5: Use brain (reasoning API)] — 30 min
+- Tutorial 5: Use brain (reasoning API) — 30 min (WIP)
 
 ### Reference
 
