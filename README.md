@@ -34,17 +34,19 @@ All plugins run sandboxed as subprocesses with explicit, declared permissions.
 
 ---
 
-## 🎯 Philosophy: the COE framework
+## 🎯 Philosophy: The COE Framework
 
 The SDK is organized around three concerns. Every API surface fits into one of them.
 
 | | Concern | What it covers |
 |---|---|---|
-| **C** | **Capability** | What your plugin can *do* — tools, reasoning, network, settings |
-| **O** | **Observation** | What your plugin can *see* — hooks, context, working memory |
-| **E** | **Experience** | What the *user* sees — UIs, notifications, context injection |
+| **C** | **Controllable** | What your plugin is allowed to do — permissions, consent, audit logs, confirmations, limits, and revocation. |
+| **O** | **Ownership** | What your plugin can access or store — user data, memory, identity, files, outputs, IP, and export boundaries. |
+| **E** | **Ecosystem** | What your plugin can connect to — tools, devices, services, workflows, agents, and external systems. |
 
-If a feature doesn't fit one of these, it doesn't belong in a plugin.
+If a feature doesn’t fit one of these, it doesn’t belong in a plugin.
+
+Plugins extend Aurora’s ecosystem — they must not weaken user control, ownership, or trust.
 
 ---
 
