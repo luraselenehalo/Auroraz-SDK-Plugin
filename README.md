@@ -276,7 +276,7 @@ The linter catches deprecated permission spellings, missing manifest fields, dan
 │                                                         │
 │  ┌──────────┐    ┌────────────┐    ┌─────────────────┐  │
 │  │  Chat /  │ ←→ │  Reasoning │ ←→ │   Memory store  │  │
-│  │  Planner │    │   engine   │    │   (ChromaDB)    │  │
+│  │  Planner │    │   engine   │    │   (ArcadeDB)    │  │
 │  └──────────┘    └────────────┘    └─────────────────┘  │
 │        ↑                                                │
 │        │ IPC (length-prefixed JSON over local socket)   │
