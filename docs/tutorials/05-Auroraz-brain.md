@@ -1,13 +1,17 @@
-# Tutorial 5 — Use Luna's brain
+# Tutorial 5 — Use AURORAZ's brain
 
 **Time:** ~30 min
 **Prereq:** Tutorial 1 (your first plugin), Tutorial 2 (memory + tools)
 **Stage 7 / SDK v0.2.0+**
 
 In this tutorial you'll build a plugin that calls AURORAZ's Fractal 1:3
-cognitive engine — the same reasoning Luna uses in chat — and surface its
+cognitive engine — the same reasoning Aurora uses in chat — and surface its
 answers as plugin tools. By the end, your plugin can answer questions at
 four reasoning depths (K0, K1, K2, K3) the same way a chat user can.
+
+Fractal 1:3 Cognitive Engine™ architecture is protected under the ResinCore Research Protection License (RRPL).
+Learn more: https://auroraz.ai/license/rrpl
+Use is permitted solely for AURORAZ Plugin purposes and requires compliance with the RRPL and COE framework.
 
 ## What is the reasoning API?
 
